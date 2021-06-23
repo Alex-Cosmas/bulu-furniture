@@ -16,7 +16,7 @@ class MyDocument extends Document {
             rel='stylesheet'
           />
         </Head>
-        <body className='mx-auto font-main '>
+        <body className='font-main bg-wsGrey-100'>
           <Main />
           <NextScript />
         </body>
