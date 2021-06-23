@@ -1,5 +1,6 @@
 import Head from 'next/head'
 // import Image from 'next/image'
+import Logo from '../components/global/Logo'
 
 import Header from '../components/global/Header'
 
@@ -67,46 +68,74 @@ export default function Home() {
             they are put in.
           </p>
         </div>
-        <div className='ImageWrapper'>
-          <div className='grid gap-2 sm:grid-cols-2'>
-            <div className='rounded-sm bg-green'>
+        <div className='mb-12 ImageWrapper'>
+          <div className='grid gap-4 grid-col-1 sm:grid-cols-2'>
+            <div className='overflow-hidden '>
               <img
                 src='/img/furniture/img07.jpg'
                 alt=''
-                className='object-cover w-full'
+                className='object-cover w-full rounded-sm shadow-lg'
               />
             </div>
-            <div className='rounded-sm bg-green '>
+            <div className='overflow-hidden '>
               <img
                 src='/img/furniture/img02.jpg'
                 alt=''
-                className='object-cover w-full'
+                className='object-cover w-full rounded-sm shadow-lg'
               />
             </div>
-            <div className='rounded-sm bg-green '>
+            <div className='overflow-hidden '>
               <img
                 src='/img/furniture/img05.jpg'
                 alt=''
-                className='object-cover w-full'
+                className='object-cover w-full rounded-sm shadow-lg'
               />
             </div>
-            <div className='rounded-sm bg-green '>
+            <div className='overflow-hidden '>
               <img
                 src='/img/furniture/img18.jpg'
                 alt=''
-                className='object-cover w-full'
+                className='object-cover w-full rounded-sm shadow-lg'
               />
             </div>
           </div>
         </div>
 
-        <div className='CTAWrapper'>
+        <div className='mb-12 CTAWrapper'>
           <div className='w-7/12 '>
-            <h1>We build custom furniture</h1>
-            <p>
+            <h1 className='text-2xl'>We build custom furniture</h1>
+
+            <p className='my-3'>
               Great furniture is hard to come by. Send us your request and we
               will assist you in making that dream a realiity.
             </p>
+          </div>
+        </div>
+
+        <div className='mb-12 Footer'>
+          <div className='flex justify-between pb-12'>
+            <div>
+              <ul>
+                <li>About Us</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+            <div>
+              <div className='flex'>
+                <div className='mr-4'>
+                  <Logo />
+                </div>
+                <div>
+                  <ul>
+                    <li>Social Media</li>
+                    <li>Email</li>
+                    <li>Phone Number</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
