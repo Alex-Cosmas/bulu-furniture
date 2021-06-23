@@ -67,7 +67,7 @@ export default function Home() {
             they are put in.
           </p>
         </div>
-        <div>
+        <div className='ImageWrapper'>
           <div className='grid gap-2 sm:grid-cols-2'>
             <div className='rounded-sm bg-green'>
               <img
@@ -97,6 +97,16 @@ export default function Home() {
                 className='object-cover w-full'
               />
             </div>
+          </div>
+        </div>
+
+        <div className='CTAWrapper'>
+          <div className='w-7/12 '>
+            <h1>We build custom furniture</h1>
+            <p>
+              Great furniture is hard to come by. Send us your request and we
+              will assist you in making that dream a realiity.
+            </p>
           </div>
         </div>
       </div>
